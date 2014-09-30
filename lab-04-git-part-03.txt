@@ -105,21 +105,25 @@ chmod u+x hello.sh
 How did you do this?  What was the output?
 ----------
 
+./hello.sh
 
 ==========
 11. Change to the root directory.  Try running your script again (hello.sh).  What was the output (if there's an error, write it out)?
 ----------
 
+-bash: ./hello.sh: No such file or directory
 
 ==========
 12. Now trying using the full, absolute path to your script (that is, starting with /...).  What did you write in?  What did it do?
 ----------
 
+/Users/student/Desktop/Nathan_Yampolsky/lab-04-version-control/hello.sh
 
 ==========
 13.  Go back to the directory that your hello.sh script was in.  What command did you use to change to this directory? 
 ----------
 
+cd -
 
 ==========
 14. Type in the following command:
@@ -129,6 +133,7 @@ echo $PATH
 Write down the output of this command
 ----------
 
+/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin
 
 ==========
 15. Type in the following command to show all environment variables:
@@ -138,6 +143,7 @@ env
 Write down the last two lines of output for this command
 ----------
 
+env
 
 ==========
 16. Set your PATH to include your home directory.  Do the following (substituting student or username for professor)
@@ -151,6 +157,8 @@ echo $PATH
 Write down the output of the last command.  It should include your home folder.
 ----------
 
+_=/usr/bin/env
+OLDPWD=/Users/student
 
 ==========
 17.  Go back to root (/)
@@ -162,12 +170,14 @@ hello.sh
 It should work now!  What is the output?
 ----------
 
+hi there!
 
 ==========
 18.  Save this file in the repository that you created from parts 1 and 2.
 
 Add and commit it to your local repository and push to the remote repository.  Check github to see that your work was submitted.
 ----------
+
 
 
 ==========
